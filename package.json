@@ -1,0 +1,31 @@
+{
+  "name": "booty",
+  "version": "0.1.0",
+  "description": "Easy, distributed app config management backed by S3",
+  "main": "index.js",
+  "bin": {
+    "booty": "bin/booty"
+  },
+  "dependencies": {
+    "cryptostream": "~0.0.1",
+    "commander": "~1.1.1",
+    "knox": "~0.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sreuter/node-booty"
+  },
+  "keywords": [
+    "config",
+    "management",
+    "s3",
+    "deployment",
+    "deploy"
+  ],
+  "author": "Sascha Reuter",
+  "license": "MIT"
+}
