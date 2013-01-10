@@ -1,6 +1,5 @@
 var knox = require('knox'),
     crypto = require('crypto'),
-    EncryptStream = require('cryptostream').EncryptStream,
     fs = require('fs');
 
 var Booty = module.exports = function(options) {
