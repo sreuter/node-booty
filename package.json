@@ -1,6 +1,6 @@
 {
   "name": "booty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easy, distributed app config management backed by S3",
   "main": "index.js",
   "bin": {
