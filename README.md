@@ -1,7 +1,7 @@
 booty
 =====
 
-Easy, distributed app config management backed by S3.
+Simple, distributed app config management backed by S3.
 
 Usage:
 

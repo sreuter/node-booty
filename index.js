@@ -13,7 +13,7 @@ var Booty = module.exports = function(options) {
 };
 
 Booty.prototype.getConfig = function(id,dest,key,cb) {
-  this.client.getFile('/' + id + '.json.enc', function(err, res){
+  this.client.getFile('/' + id + '.enc', function(err, res){
     if(err || res.statusCode !== 200) {
       cb(err || new Error("Not status code 200"));
     } else {
@@ -41,7 +41,7 @@ Booty.prototype.putConfig = function(id,src,key,cb) {
     'Content-Length': fstat.size
   };
 
-  var req = this.client.put('/' + id + '.json.enc', headers);
+  var req = this.client.put('/' + id + '.enc', headers);
 
   req.on('response', function(res) {
     if(res.statusCode !== 200) {
