@@ -15,7 +15,7 @@ var Booty = module.exports = function(options) {
 Booty.prototype.getConfig = function(id,dest,key,cb) {
   this.client.getFile('/' + id + '.enc', function(err, res){
     if(err || res.statusCode !== 200) {
-      cb(err || new Error("Not status code 200"));
+      cb(err || new Error("status code " + res.statusCode));
     } else {
       var config_file = fs.createWriteStream(dest);
       var decipher = crypto.createDecipher('aes-256-cfb', key);
